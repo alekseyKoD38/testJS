@@ -1,4 +1,9 @@
 function findSeq(arr, L, R) {
+
+    if (L<=0){
+        console.log("Error: размер последовательности не может быть меньше или равен 0");
+        return 0;
+    }
     let result = [];
     let rows = arr.length; // Количество строк (M)
     let cols = arr[0].length; // Количество столбцов (N)
@@ -36,4 +41,5 @@ let arr = [
     [2, 4, 3, 8, 2, 5],
     [5, 3, 2, 4, 7, 0]
 ];
-let atvet = findSeq(arr, 4, 2);
+
+let atvet = findSeq(arr, 0, 2);
